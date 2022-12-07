@@ -68,7 +68,7 @@ nav .menu li a:hover {
 }
 nav span{
     position: absolute;
-    right: 45px;
+    right: 0;
     top: 5px;
     color: #9FC131;
     border: #9FC131 solid 2px;
