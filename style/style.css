@@ -195,4 +195,8 @@ main .flex-container .card:hover .desc {
     nav .menu {
         display: none;
     }
+    main .flex-container .card {
+        width: 540px;
+        height: 540px;
+    }
 }
