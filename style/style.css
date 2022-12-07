@@ -153,6 +153,7 @@ main .flex-container .card {
     color: white;
     transition: all .5s;
     padding: 100px 20px;
+    box-sizing: border-box;
 }
 
 main .flex-container .card:hover .desc {
