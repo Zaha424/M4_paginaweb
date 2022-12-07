@@ -66,6 +66,20 @@ nav .menu li a:hover {
     color: #9FC131;
     background-color: #042940;
 }
+nav span{
+    position: absolute;
+    right: 45px;
+    top: 5px;
+    color: #9FC131;
+    border: #9FC131 solid 2px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: background-color .5s;
+    display: none;
+}
+nav span:hover {
+    background-color: #042940;
+}
 
 /* CSS del header */
 header {
@@ -170,5 +184,11 @@ main .flex-container .card:hover .desc {
         justify-content: space-around;
         flex-direction: column;
         align-items: center;
+    }
+    nav span{
+        display: block;
+    }
+    nav .menu {
+        display: none;
     }
 }
