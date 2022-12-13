@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reath Row Records</title>
+    <link rel="stylesheet" href="../style/elementosComunes.css">
+    <link rel="stylesheet" href="style/contacto.css">
+    <link rel="stylesheet" href="../style/font-awesome.min.css">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- El apartado donde se pone el logo y los botones de navegación -->
+    <nav>
+        <div class="container">
+            <div class="header-leftside">
+                <a href="#"><img src="../images/Death-Row-Records-logo.png" alt="Logo de Death Row Records"></a>
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li
+                    ><li><a href="../pages/discos.html">Discos</a></li
+                    ><li><a href="../pages/artistas.html">Artistas</a></li
+                    ><li><a href="../pages/privacidad.html">Privacidad</a></li
+                    ><li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <span onclick="menu()"><i class="fa fa-bars fa-4x" aria-hidden="true"></i></span>
+        </div>
+    </nav>
+    <hr>
+
+    <!-- El header -->
+    <header id="test">
+        <div class="container">
+            <h1>DeathRow Records</h1>
+        </div>
+        <div class="black-layer"></div>
+    </header>
+    <hr>
+
+    <!-- El contenido principal de la página -->
+    
+    <main>
+        <div class="container">
+            <h2>Mándanos tu mensaje de apoyo o de sugerencias</h2>
+            <div class="mediosDeContacto">
+                <ul>
+                    <li>
+                        <i class="icon fa fa-phone fa-5 fa-3x"></i>
+                        <h3 class="opcion-titulo">teléfono</h3>
+                        <span class="option-desc">999 00 99 09</span>
+                    </li>
+                    <li>
+                        <i class="icon fa fa-envelope fa-5 fa-3x"></i>
+                        <h3 class="opcion-titulo">email</h3>
+                        <span class="option-desc">contacto@deathrow.com</span>
+                    </li>
+                </ul>
+            </div>
+            <form action="formularioContacto.php" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <select name="asunto" id="asunto" aria-placeholder="Selecciona un asunto">
+                    <option value="">Mensaje de apoyo</option>
+                    <option value="">Sugerencia</option>
+                </select>
+
+                <div class="campo">
+                    <label for="mensaje">Esriba su mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="politica" id="politica" required>
+                    <label for="politica">He leído y acepto <a href="privacidad.html"> los términos y condiciones de uso</a></label>
+                </div>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+
+    <!-- La parte baja de la página -->
+    <footer>
+        <div class="footer-content">
+            <h3>Death Row Records</h3>
+            <p>Con miles de canciones producidas desde su inicio en 1991, Death Row Records se considera la dicográfica que ha tenido más éxito en todos los tiempos. Fue en un momento el hogar de super estrellas del Rap y Hip Hop como el legendario 2Pac o Snoop Dogg</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
+                <li><a href="#"><i class="fa fa-spotify fa-2x" aria-hidden="true"></i></a></li>
+             </ul>
+        </div>
+    </footer>
+
+
+
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

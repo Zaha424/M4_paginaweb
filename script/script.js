@@ -12,3 +12,11 @@ function cambiarFondo() {
 
 setInterval(cambiarFondo, 2000)
 
+function menu() {
+    var nav = document.getElementById("menu");
+    if (nav.className === "menu") {
+        nav.className += "responsive";
+    } else {
+        nav.className = "menu responsive";
+    }
+}
