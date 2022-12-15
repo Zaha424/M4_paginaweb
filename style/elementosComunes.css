@@ -1,0 +1,226 @@
+/* Importar las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+/* CSS para todos los elemtos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    outline: 0;
+}
+body {
+    background-color: #042940;
+}
+
+/* Elementos comunes*/
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Contenidor para columnas */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Hemos utilizado el container para centrar un poco los elemtos */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+/* CSS del nav */
+nav img {
+    width: 100px;
+    padding: 5px;
+    border: 2px white solid;
+}
+nav {
+    background-color: #005C53;
+    position: relative;
+    padding: 10px 40px;
+}
+nav .header-leftside {
+    text-align: left;
+}
+nav .menu {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+nav .menu li {
+    display: inline-block;
+}
+
+nav .menu li a {
+    position: block;
+    padding: 10px 25px;
+    margin: 0 5px;
+    background: #9FC131;
+    text-decoration: none;
+    color: #042940;
+    border-radius: 10px;
+    border: 2px solid #D6D58E;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+nav .menu li a:hover {
+    color: #9FC131;
+    background-color: #042940;
+}
+nav span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    color: #9FC131;
+    border: #9FC131 solid 2px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: background-color .5s;
+    display: none;
+}
+nav span:hover {
+    background-color: #042940;
+}
+
+
+/* CSS del header */
+header {
+    padding: 20px 40px;
+    background-image: url(../images/bg1.jpg);
+    background-position: 0% 20%;
+    background-size: cover;
+    color: #D6D58E;
+    position: relative;
+    z-index: +1;
+}
+header h1 {
+    margin: 75px 0;
+    z-index: 99;
+    display: inline-block;
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 80px;
+    border: 10px solid;
+    font-weight: 100;
+    padding: 20px 5px;
+    cursor: default;
+}
+.black-layer {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* CSS del footer*/
+footer{
+    background: #111;
+    height: auto;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 740px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 50%;
+    display: block;
+    width: 40px;
+
+}
+
+.socials a i{
+    width: 30px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+/* media queries */
+@media (max-width: 1150px) {
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container {
+        width: 90%;
+    }
+    nav span{
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .menu.responsive {
+        display: block;
+        position: relative;
+    }
+    nav .menu li a {
+        width: 200px;
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+    nav .menu.responsive {
+        position: relative;
+    }
+    main .flex-container .card {
+        width: 540px;
+        height: 540px;
+    }
+}
+@media (max-width: 616px) {
+    .container{
+        width: 100%;
+    }
+}
+main{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,92,83,1) 51%, rgba(255,255,255,1) 100%);
+    padding: 20px;
+}

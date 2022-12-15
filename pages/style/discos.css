@@ -1,0 +1,18 @@
+main h2 {
+    color: #9FC131;
+}
+
+main article {
+    display: flex;
+    background-color: #D6D58E;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+main article p {
+    margin-bottom: 20px;
+}
+
+main article img {
+    width: 90%;
+}
