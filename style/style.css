@@ -26,7 +26,7 @@ main .flex-container .card {
     overflow: hidden;
     margin: 20px 0;
 }
-.card .cover {
+.card .cover, .card .cover .album-cover {
     height: 100%;
     width: 100%;
 }

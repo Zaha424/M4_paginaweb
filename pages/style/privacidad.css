@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 main h2 {
-    font-size: 30px;
+    font-size: 50px;
     font-family: 'Permanent Marker', cursive;
     color: #9FC131;
     padding: 30px 0;
@@ -10,7 +10,7 @@ main h2 {
 .politica {
     width: 80%;
     margin: auto;
-    background-color: antiquewhite;
+    background-color: #D6D58E;
     padding: 20px 50px;
     text-align: left;
     border-radius: 10px;
